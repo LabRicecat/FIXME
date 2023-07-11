@@ -1,5 +1,5 @@
 # FIXME
-(_Note, this is made as part of the truttl1 esojam. This README contains roleplay for the fun and profit_)
+(_Note, this is made as part of the truttle1 esojam. This README contains roleplay for the fun and profit_)
 
 ## Installation
 ```
@@ -18,7 +18,7 @@ So! You want to learn about out ~failed~ wonderful project `FIXME`, greeeeat...
 
 Basically, imagine a `BASIC` clone, but we _**realy**_ screwed up at this one.
 
-A Program consists of _lines_, each _line_ looking like this:  
+A program consists of _lines_, each _line_ looking like this:  
 ```
 LINE WORD VAL VAL VAL...
 LINE PERSON = WORD VAL VAL VAL...
