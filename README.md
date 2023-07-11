@@ -16,7 +16,7 @@ Oh.. I have to do it.. oh okay boss.
 
 So! You want to learn about out ~failed~ wonderful project `FIXME`, greeeeat... 
 
-Basically, imagine a `BASIC` clone, but we _**realy**_ screwed up at this one.
+Basically, imagine a `BASIC` clone, but we _**really**_ screwed up at this one.
 
 A program consists of _lines_, each _line_ looking like this:  
 ```
