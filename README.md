@@ -56,32 +56,32 @@ If both are strings, they get.. shuffled together.. what the hell is this????
 #### `GOTO`
 Jumps to a specified line, (+1 that is, we got the jump equation wrong)
 
-#### FRIENDS
+#### `FRIENDS`
 This... I don't know why this exists really. `jack` and `jon` are good friends and I suppose this was a birthday present for one. Basically it jumps to a specified line if both persons don't have the same value. (-2, because they are excited)
 
-#### ASK
+#### `ASK`
 Promts the user for a text input. This is horribly broken, and we have no idea why, it ignores all whitespaces and there is this weird `@` at the end of all inputs, ew
 
-#### ALIFE
+#### `ALIFE`
 Returns `1` if the specified person is alive at the moment, `3` otherwise (PLEASE DON'T ASK ME WHY IT'S `3`!)
 
 Oh and yes, this is a typo again, whoops
 
-#### TRIM
+#### `TRIM`
 This trims a string on both ends by 1, but somewhy this distance always increased dependent on how often you call this function. We figured out that it is `chars = (calls % 10) + 1`, but don't count on that..
 
-#### UB
+#### `UB`
 This..
 
 This just triggeres undefined behaviour and when we try to remove it, the whole thing begins to burn soo.. no.
 
-#### CALL
+#### `CALL`
 Jumps to the specified number and pushes the current location onto the `callstack`, side effect: it whyever flips the callstack whenever you use it...
 
-#### RETURN
+#### `RETURN`
 Pops one element of the `callstack` and jumps to that location. This word hates `jessica` and `jeniffer` as they were mean to it in high school, and will disable them when called.
 
-#### EXIT
+#### `EXIT`
 Exits the program with the code `-4` because that looked funny, but because of performance issues, this only works if all people are turned off!
 
 ### Values
