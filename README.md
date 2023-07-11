@@ -60,7 +60,7 @@ Jumps to a specified line, (+1 that is, we got the jump equation wrong)
 This... I don't know why this exists really. `jack` and `jon` are good friends and I suppose this was a birthday present for one. Basically it jumps to a specified line if both persons don't have the same value. (-2, because they are excited)
 
 #### `ASK`
-Promts the user for a text input. This is horribly broken, and we have no idea why, it ignores all whitespaces and there is this weird `@` at the end of all inputs, ew
+Prompts the user for a text input. This is horribly broken, and we have no idea why, it ignores all whitespaces and there is this weird `@` at the end of all inputs, ew
 
 #### `ALIFE`
 Returns `1` if the specified person is alive at the moment, `3` otherwise (PLEASE DON'T ASK ME WHY IT'S `3`!)
@@ -73,7 +73,7 @@ This trims a string on both ends by 1, but somewhy this distance always increase
 #### `UB`
 This..
 
-This just triggeres undefined behaviour and when we try to remove it, the whole thing begins to burn soo.. no.
+This just triggers undefined behaviour and when we try to remove it, the whole thing begins to burn soo.. no.
 
 #### `CALL`
 Jumps to the specified number and pushes the current location onto the `callstack`, side effect: it whyever flips the callstack whenever you use it...
@@ -94,7 +94,7 @@ Examples:
 ```
 Wherever you put a `value`, you can also place a `person`.
 ### Persons
-So.. our value registers somehow became sentient and we now reffer to them as "persons". 
+So.. our value registers somehow became sentient and we now refer to them as "persons". 
 
 Register- sorry, "persons" can be alive or dead.
 When they're dead, you can not read from them, assigning to them will revive them.
@@ -124,7 +124,7 @@ Yeah.. they are too old to work, please leave them alone.
 Jackob dislikes other people, so they will only work if 4 or less people (them included) are alive at the moment.
 
 #### jessica
-Our little deamon, if you awake her, all other registers turn off... scary
+Our little daemon, if you awake her, all other registers turn off... scary
 
 ## Examples
 Some.. mild hacks, so we feel better about ourselves
