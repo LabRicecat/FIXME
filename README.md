@@ -158,3 +158,19 @@ Some.. mild hacks, so we feel better about ourselves
 51 PRINT jeniffer
 60 GOTO 9
 ```
+### Fib()
+```
+10 jeniffer = 0
+15 jon = 10
+20 josh = 1
+40 james = 0
+50 FRIENDS 60
+60 GOTO 99
+69 josh = AdD josh jeniffer
+70 jeniffer = SUB josh jeniffer
+74 james = AdD 1 james
+75 AdD 0 0
+76 AdD 0 0
+80 GOTO 49
+100 PRINT jeniffer
+```
