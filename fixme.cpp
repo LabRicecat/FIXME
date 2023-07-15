@@ -93,10 +93,11 @@ struct option {
 };
 
 namespace fixme {
-    std::stack<long long> callstack;
+    inline std::stack<long long> callstack;
+    inline std::map<long long,std::string> line_source;
     inline unsigned long lineptr = 0;
     void throw_useless_error(const std::string& message) {
-        std::cout << "LINE " << lineptr << " // FIXME (" << message << ")\n";
+        std::cout << line_source[lineptr] << " // FIXME (" << message << ")\n";
         std::exit(rand() % 100);
     }
 
@@ -260,7 +261,7 @@ namespace fixme {
         return r.val;
     }
 
-    std::map<long long,line> lines;
+    inline std::map<long long,line> lines;
     extern inline std::unordered_map<std::string,word> words;
 
     inline bool is_value(const std::string& str) {
@@ -288,6 +289,7 @@ namespace fixme {
             else lexed_lines.back().push_back(i);
 
         for(auto& i : lexed_lines) {
+            line_source[lineptr] = i;
             trim(i);
             if(i.empty()) continue;
             line l;
@@ -314,6 +316,7 @@ namespace fixme {
                 throw_useless_error("unknown math failure when " + line[0]);
             }
             lineptr = ln;
+            line_source[lineptr] = i;
             if(has_digit(ln,3)) throw_useless_error("line containing 3 corrupts the universe");
             if(line.size() == 1) {
                 lines[ln] = l;
