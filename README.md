@@ -34,6 +34,8 @@ LINE PERSON = VAL
 
 There are no comments, as the people who tried to implement them somehow disappeared, and after 3 men, management said we were not allowed to continue, legal problems or something. (RIP Jeremy)
 
+Also the interpreter memory leaks, of course it does... damn it
+
 ### Words
 A `word` is something that does some stuff, here a brief incomplete list:
 

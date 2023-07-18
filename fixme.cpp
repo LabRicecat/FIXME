@@ -471,7 +471,12 @@ inline std::unordered_map<std::string,fixme::word> fixme::words = {
     }}},
     {"UB",{-1, // invokes... UB
     [](const std::vector<std::string>& args)->value {
+#if __cplusplus >= 202200L
         std::unreachable();
+#else 
+        int a[1];
+        a[2];
+#endif
         return 0;
     }}},
     {"CALL",{1, // flips the call stack
