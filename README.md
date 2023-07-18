@@ -1,5 +1,5 @@
 # FIXME
-(_Note, this is made as part of the truttl1 esojam. This README contains roleplay for the fun and profit_)
+(_Note, this is made as part of the truttle1 esojam. This README contains roleplay for the fun and profit_)
 
 ## Installation
 ```
@@ -16,9 +16,9 @@ Oh.. I have to do it.. oh okay boss.
 
 So! You want to learn about out ~failed~ wonderful project `FIXME`, greeeeat... 
 
-Basically, imagine a `BASIC` clone, but we _**realy**_ screwed up at this one.
+Basically, imagine a `BASIC` clone, but we _**really**_ screwed up at this one.
 
-A Program consists of _lines_, each _line_ looking like this:  
+A program consists of _lines_, each _line_ looking like this:  
 ```
 LINE WORD VAL VAL VAL...
 LINE PERSON = WORD VAL VAL VAL...
@@ -58,32 +58,32 @@ If both are strings, they get.. shuffled together.. what the hell is this????
 #### `GOTO`
 Jumps to a specified line, (+1 that is, we got the jump equation wrong)
 
-#### FRIENDS
+#### `FRIENDS`
 This... I don't know why this exists really. `jack` and `jon` are good friends and I suppose this was a birthday present for one. Basically it jumps to a specified line if both persons don't have the same value. (-2, because they are excited)
 
-#### ASK
-Promts the user for a text input. This is horribly broken, and we have no idea why, it ignores all whitespaces and there is this weird `@` at the end of all inputs, ew
+#### `ASK`
+Prompts the user for a text input. This is horribly broken, and we have no idea why, it ignores all whitespaces and there is this weird `@` at the end of all inputs, ew
 
-#### ALIFE
+#### `ALIFE`
 Returns `1` if the specified person is alive at the moment, `3` otherwise (PLEASE DON'T ASK ME WHY IT'S `3`!)
 
 Oh and yes, this is a typo again, whoops
 
-#### TRIM
+#### `TRIM`
 This trims a string on both ends by 1, but somewhy this distance always increased dependent on how often you call this function. We figured out that it is `chars = (calls % 10) + 1`, but don't count on that..
 
-#### UB
+#### `UB`
 This..
 
-This just triggeres undefined behaviour and when we try to remove it, the whole thing begins to burn soo.. no.
+This just triggers undefined behaviour and when we try to remove it, the whole thing begins to burn soo.. no.
 
-#### CALL
+#### `CALL`
 Jumps to the specified number and pushes the current location onto the `callstack`, side effect: it whyever flips the callstack whenever you use it...
 
-#### RETURN
+#### `RETURN`
 Pops one element of the `callstack` and jumps to that location. This word hates `jessica` and `jeniffer` as they were mean to it in high school, and will disable them when called.
 
-#### EXIT
+#### `EXIT`
 Exits the program with the code `-4` because that looked funny, but because of performance issues, this only works if all people are turned off!
 
 ### Values
@@ -96,7 +96,7 @@ Examples:
 ```
 Wherever you put a `value`, you can also place a `person`.
 ### Persons
-So.. our value registers somehow became sentient and we now reffer to them as "persons". 
+So.. our value registers somehow became sentient and we now refer to them as "persons". 
 
 Register- sorry, "persons" can be alive or dead.
 When they're dead, you can not read from them, assigning to them will revive them.
@@ -126,7 +126,7 @@ Yeah.. they are too old to work, please leave them alone.
 Jackob dislikes other people, so they will only work if 4 or less people (them included) are alive at the moment.
 
 #### jessica
-Our little deamon, if you awake her, all other registers turn off... scary
+Our little daemon, if you awake her, all other registers turn off... scary
 
 ## Examples
 Some.. mild hacks, so we feel better about ourselves
@@ -159,4 +159,20 @@ Some.. mild hacks, so we feel better about ourselves
 50 TRIM " "
 51 PRINT jeniffer
 60 GOTO 9
+```
+### Fib()
+```
+10 jeniffer = 0
+15 jon = 10
+20 josh = 1
+40 james = 0
+50 FRIENDS 60
+60 GOTO 99
+69 josh = AdD josh jeniffer
+70 jeniffer = SUB josh jeniffer
+74 james = AdD 1 james
+75 AdD 0 0
+76 AdD 0 0
+80 GOTO 49
+100 PRINT jeniffer
 ```
