@@ -1,3 +1,6 @@
+# !! MOVED TO CODEBERG.ORG !!
+**This is an old version, please visit the current version at [codeberg.org](https://codeberg.org/LabRicecat/cat)!**
+
 # FIXME
 (_Note, this is made as part of the truttle1 esojam. This README contains roleplay for the fun and profit_)
 
